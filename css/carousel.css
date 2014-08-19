@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Float Clear FIX - All Browsers */
+.group:after		{ content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+ * html .group 		{ height: 1%; }
+*:first-child+html .group
+					{ min-height: 1px; }
+.clearleft			{ clear: left; }
+
+
+/* CAROUSEL */
+/*div.carousel-section 				{ margin-top: 15px; }
+ul.carousel-apps li a				{ color: #fff; font: bold 12px verdana,sans-serif; }
+ul.carousel-apps li p 				{ color: #fff; margin-bottom: 5px; font: 11px/16px verdana,sans-serif; text-align: left; line-height: 14px; }
+ul.carousel-apps li div				{ text-align: left; margin-bottom: 5px; }
+ul.carousel-apps li div.app-item-wrapper { padding: 10px; }
+ul.carousel-apps li img 			{ float: left; display: inline; margin-right: 12px; }
+div.carousel-actions 				{ margin: 10px 6px 0 0; color: #666; font-weight: bold; }*/
+
+
+div.carousel 						{ clear: both; padding: 0; position: relative; }
+ul.carousel-apps					{ padding-top: 0; padding-left:20px; margin-top:0;}
+ul.carousel-apps li 				{ display:inline; float:left; padding:5px 5px; margin: 0; }
+/*div.carousel ul li div.image		{ float: left; text-align: center; }
+div.carousel ul li div.info			{ float: left; width: 180px; }
+
+div.data							{ margin-top: 30px; }
+div.data p a						{ padding-top: 10px; }
+div.data fieldset					{ margin: 5px 0; padding: 5px 0; }		
+div.data fieldset legend			{ margin-left: 0px; font-weight: bold; }							
+div.data p label					{ width: 100px; text-align: left; display: inline; color: #ddd; }
+div.data p span						{  }
+*/
+div.carousel div.arrow				{ background: url(../images/carousel_arrows.png) no-repeat 50% 0;
+	 position: absolute; top: 65px; width: 20px; height: 28px; cursor: pointer; }
+div.carousel div.arrow.left			{ left: 0px; background-position: 0 0; }
+div.carousel div.arrow.right		{ right: 0px; background-position: -20px 0; }
+
+/*
+
+	div.panes > div 			{ display:none;	padding: 0; border:1px solid #999; border-top:0; font-size:14px; background-color:#fff; }
+	div.carousel-section		{ margin-top: 15px; }
+	ul.list-apps div.app-img 	{ width: 91px; height: 92px; background-position: 50% 50%; background-repeat: no-repeat;
+								  background-color: #fff; border: solid 1px #333; margin-right: 10px; }
+	ul.carousel-apps div.app-img
+								{ width: 89px; height: 90px; background-position: 50% 50%; background-repeat: no-repeat;
+								  background-color: #000; margin-right: 10px;}
+	div.carousel-no-content		{ height: 121px; color: #fff; padding: 20px; }
+	div.carousel-no-content p, div.carousel-no-content li
+								{ line-height: 18px; font-weight: bold; }
+	div.carousel-no-content p	{ margin-bottom: 10px; }
+	div.carousel-non-content ol { padding-bottom: 15px; }
+	div.carousel-no-content a	{ color: #fff; text-decoration: underline; }
+*/

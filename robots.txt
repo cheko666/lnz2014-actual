@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /Connections
+Disallow: /mg
+Disallow: /piloto
+Disallow: /images
+Disallow: /_mmServerScripts
+Disallow: /trendyicons.mx
+Disallow: /ss
+Disallow: /Templates
+Disallow: /tienda
+Disallow: /respaldos
+Disallow: /lists
+Disallow: /Pdfs
+Sitemap: http://www.lancetahg.com.mx/sitemap.xml

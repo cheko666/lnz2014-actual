@@ -1,0 +1,161 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	/*vertical-align: baseline;*/
+}
+:focus { outline:0; }
+a,a:active { outline:none;text-decoration:none;}
+body { line-height:1; background-color:#0C2C52;
+  background:transparent url(../images/bg_body.png) repeat-x;
+}
+ol,ul { list-style:none;}
+caption,th,td { text-align:left; font-weight:normal; }
+blockquote:before,blockquote:after,q:before,q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+* html .clearfix {height: 1px;}
+
+.clearfix {display: block;}
+<!-[if IE 7]>
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+<![endif]->
+.div {display:block; clear:both;}
+/*
+	Page style
+*/
+
+body {
+	color:#333333;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	
+}
+h1,h2,h3,h4,h5,h6 {
+	display:block;
+}
+h1 {
+	text-align:left;
+	font-size:24px;
+	padding:0 10px 0 0;
+	font-weight:bold;
+}
+h2{
+	font-size: 17px;
+	font-weight: bold;
+	color: #335585;
+	line-height: 1.3em;
+	text-align:left;
+	margin:12px 0 10px;
+}
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #335585;
+	line-height: 1.2em;
+	text-align:left;
+	margin:8px 0 4px;
+}
+h4{
+	font-size: 1em;
+	font-weight: bold;
+	color: #335585;
+	line-height: 1.2em;
+	text-align:left;
+	margin:8px 0 4px;
+}
+h5{
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #335585;
+	line-height: 1.0em;
+	text-align:left;
+	margin:4px 0 4px;
+}
+p {
+	text-align:left;
+	color:#333333;
+	font-size:1em;
+	line-height:1.4em;
+	margin:6px 0 6px;
+	clear:inherit;
+}
+.lista1 ul {
+	padding-left:5px;
+}
+.lista1 li {
+	list-style:disc;
+	padding:0 100px 4px 0;
+	font-size:0.9em;
+	line-height:1.4em;
+	margin-left: 20px;
+}
+Anchors
+a,a:link,a:visited {
+	text-decoration:none;
+}
+a:hover,a:active {
+	text-decoration:underline;
+}
+form {
+	margin:0;
+}
+
+legend {background:#ccc;padding:5px 10px;font-size:1.2em;}
+fieldset {border: 1px dotted #ccc;padding:10px}
+form legend, form label {color: #333;}
+
+fieldset p {padding: 5px 10px 7px;}
+input,textarea{border:1px solid #ccc;padding:5px;font-size:12px}
+
+input.error,textarea.error { border: 1px dotted red; }
+form .submit { background-color: #03F; cursor:pointer; padding:10px; color:#FFF; }
+form .submitOk { background-color:#36F; color:#FFF; cursor:pointer; padding:10px; }
+
+#mensaje{width:95%;margin:10px auto; padding:20px; text-align:center; display:none;}
+.mensaje {
+	background-color: #FC0; border: 1px solid #DDDDDD; width:400px; margin: 12px auto; display: block;  text-align: center; -moz-border-radius: 8px; border-radius: 8px; -webkit-border-radius: 8px;
+}
+
+.lista { margin:0; margin-bottom:20px; margin-top:10px;}
+.lista li { list-style-type:disc; margin: 7px 0;}
+
+.texto_resaltado { background-color:#FF0; }
+select {
+	width: 100%;
+	background: #FFF;
+	color: #666;
+	padding: 1px;
+	font-size: 11px;
+	line-height: 100%;
+	border: 1px solid #C1C1C1;
+	height: 24px;
+	-moz-border-radius: 10px; border-radius: 10px; -webkit-border-radius : 10px;
+}
+ 
+option {
+	background: #F9F9F9;
+	color: #666;
+}
+.enfasis { font-weight:bold; font-style:italic; color:#003399;}
+.bloque a { border-bottom:thin #666 dashed; }  
+.link_dash { border-bottom:thin #666 dashed; }  
