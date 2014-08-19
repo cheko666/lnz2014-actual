@@ -1,0 +1,20 @@
+/* CSS Document */
+/***************Menú principal***************/
+#titulo {
+padding-bottom:10px;
+}
+#titulo_bottom {
+	padding:5px;
+	background-color:#f0f0f0;
+	margin-bottom:15px;
+}
+.descuento_label_oferta {
+	background: url(../../images/oferta_label_preciopromocion.png) no-repeat;
+	width: 70px;	
+	height: 70px;
+	padding: 10px 0 0 10px;
+	margin: 0;
+	float:left;
+	display:block;
+	color:#FFF; font-size:34px;letter-spacing:0.01em; text-align:left;
+}
