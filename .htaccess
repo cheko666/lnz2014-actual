@@ -1,0 +1,39 @@
+	
+
+###########################################
+RewriteEngine On
+RewriteBase /
+
+#RewriteCond %{REQUEST_URI} !/paginaMantenimiento.html$
+#RewriteCond %{REMOTE_ADDR} !^187.207.93.101
+#RewriteRule $ /paginaMantenimiento.html [R=302,L]
+
+RewriteRule ^tarjeta-cliente-distinguido tarjeta-cliente-distinguido.php [L]
+RewriteRule ^sucursales sucursales.php [L]
+RewriteRule ^contacto$ contacto.php
+RewriteRule ^como-comprar como-comprar.php [L]
+RewriteRule ^proveedores proveedores.php [L]
+RewriteRule ^aviso-de-privacidad aviso-de-privacidad.php [L]
+RewriteRule ^productos$ productos.php
+RewriteRule ^promociones/?([a-zA-Z0-9-]*)$ productos_promocion.php?promo=$1 [L]
+RewriteRule ^productos/?([0-9-]*)/([a-zA-Z0-9-]*)$ producto_detalle.php?ID=$1&prod=$2 [L]
+RewriteRule ^marcas/?([a-zA-Z0-9-]*)$ marcas.php?marca=$1 [L]
+RewriteRule ^marcas/?(.*)/([0-9-]*)$ marcas.php?marca=$1&pageNum_Productos=$2
+RewriteRule ^categorias/?([a-zA-Z0-9-]*)$ categorias.php?cat=$1 [L]
+RewriteRule ^categorias/?([a-zA-Z0-9-]*)/([0-9-]*)$ categorias.php?cat=$1&pageNum_Productos=$2
+RewriteRule ^sugerencias$ sugerencias.php [L]
+RewriteRule ^quienes-somos$ quienes-somos.php [L]
+RewriteRule ^newsletter/registro$ newsletter_registro.php [L]
+ErrorDocument 404 /404.html
+###########################################
+# Google Analytics Integration - Added by cPanel.
+<IfModule mod_substitute.c>
+AddOutputFilterByType SUBSTITUTE text/html
+Substitute "s|(<script src='/google_analytics_auto.js'></script>)?</head>|<script src='/google_analytics_auto.js'></script></head>|i"
+</IfModule>
+# END Google Analytics Integration
+RewriteCond %{HTTP_HOST} ^lancetahg\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.lancetahg\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^lancetahg\.com\.mx$
+RewriteRule ^/?$ "http\:\/\/www\.lancetahg\.com\.mx\/" [R=301,L]
+
